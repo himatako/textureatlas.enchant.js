@@ -4,6 +4,7 @@
  * @require enchant.js v0.6.0 or later
  * @author Guts(Hima)  
  * @contact guts@coffeedoggames.com
+ * @twitter http://www.twitter.com/himatako
  *
  * @example
  * enchant.TextureAtlas.createTextureAtlas('mainAtlas', 
