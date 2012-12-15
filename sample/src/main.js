@@ -12,6 +12,8 @@ window.onload = function()
 
     game.onload= function()
     {        
+        // Create a texture atlas called 'mainAtlas', using
+        // atlas.json and atlas.png files
         enchant.TextureAtlas.createTextureAtlas('mainAtlas',
                 this.assets['res/atlas.json'],
                 this.assets['res/atlas.png']);
@@ -34,7 +36,7 @@ var SceneGame = enchant.Class.create(enchant.Scene,
         bgSprite.x = Core.instance.width/2 - bgSprite.width/2;
 
         // You can also assign it after created
-        var characterSprite = new AtlasSprite('mainAtlas');
+        var characterSprite = new enchant.AtlasSprite('mainAtlas');
         characterSprite.spriteId = 'enemies-01.png';
         characterSprite.count = 0;
 
